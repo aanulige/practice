@@ -62,7 +62,7 @@ public class MinimumCostForTickects {
         return dp[i];
     }
 
-    
+
     /* Dynamic Programing */
     
     public static int MAXN = 366;
