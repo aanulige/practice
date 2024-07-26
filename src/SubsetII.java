@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SubsetII {
-    /**
+    /** Combination
      * Given an integer array nums that may contain duplicates, return all possible
      * subsets
      * (the power set).

@@ -5,11 +5,9 @@ public class QuickSort {
     public static int first;
     public static int last;
     public void quickSort(int[] nums, int k, int l, int r){
-        //???????????????????????????
         if(l >= r){
             return;
         }
-
         partition(nums, l, r, k);
         // 返回两个值，分别是 ==x 的左边界和右边界，用first和last记录， 调左右侧递归
         // 为了防止底层的递归过程覆盖全局变量

@@ -30,7 +30,7 @@ public class MinimumPathSum {
                 dp[i][j] = -1;
             }
         }
-        return 0;
+        return f2(grid,0,0, dp);
     }
 
     public static int f2(int[][] grid, int i, int j, int[][] dp){
@@ -44,10 +44,10 @@ public class MinimumPathSum {
             int up = Integer.MAX_VALUE;
             int left = Integer.MAX_VALUE;
             if(i - 1 >= 0){
-                up = f1(grid, i - 1, j);
+                up = f2(grid, i - 1, j, dp);
             }
             if(j - 1 >= 0) {
-                left = f1(grid, i, j - 1);
+                left = f2(grid, i, j - 1, dp);
             }
             ans = grid[i][j] + Math.min(up, left);
         }
@@ -65,7 +65,7 @@ public class MinimumPathSum {
             dp[i][0] = dp[i - 1][0] + grid[i][0];
         }
         for (int j = 0; j < n; j++) {
-            dp[0][j] = dp[0][j] + grid[0][j];
+            dp[0][j] = dp[0][j - 1] + grid[0][j];
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {

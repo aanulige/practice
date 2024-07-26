@@ -22,7 +22,6 @@ public class NQueens {
         } else{
             sb.append(".");
         }
-
     }
 
     public boolean check(){
