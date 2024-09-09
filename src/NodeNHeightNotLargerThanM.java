@@ -10,7 +10,7 @@ import java.io.StreamTokenizer;
 // there are n nodes, calculate how many binary trees with different structures there are
 // Solutions that satisfy the requirement that the number of nodes is n and the height of the tree does not exceed m
 // Because the answer is very large, the answer needs to be modulo 1000000007 and then output
-public class NodenHeightNotLargerThanm {
+public class NodeNHeightNotLargerThanM {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StreamTokenizer in = new StreamTokenizer(br);

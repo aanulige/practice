@@ -72,6 +72,6 @@ public class MinimumPathSum {
                 dp[i][j] = Math.min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];
             }
         }
-        return dp[m - 1][n - 1];
+        return dp[0][0];
     }
 }

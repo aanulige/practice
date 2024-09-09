@@ -23,7 +23,7 @@ public class UnionFind {
         }
         return a;
 
-//        while(a != father[a]){
+//        if(a != father[a]){ //只要a的代表元素不是a时执行（当前元素的father不是自己时）
 //            father[a] = find(father[a]);
 //        }
 //        return father[a];
